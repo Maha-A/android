@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#F0F0F0" >
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="200dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/lock" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_marginBottom="61dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:drawableLeft="@drawable/user" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckedTextView
+        android:id="@+id/TextViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user"
+        android:layout_alignBottom="@+id/user"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/user"
+        android:text="UserID"
+        android:textColor="#000000" />
+
+    <CheckedTextView
+        android:id="@+id/TextViewPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/password"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignRight="@+id/TextViewUser"
+        android:text="Password"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="250dip"
+        android:layout_height="25dip"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="#20B2AA"
+        android:text="Sign in"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
+
+
+

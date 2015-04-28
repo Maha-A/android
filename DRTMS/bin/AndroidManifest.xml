@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.drtms"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.BLUETOOTH"/>
+        <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        
+        <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.drtms.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="GlucoseMeter"></activity>
+        <activity android:name="Liste"></activity>
+		<activity android:name="Choice"></activity>
+	<activity android:name="PatientInfo"></activity>
+	<activity android:name="LogIn"></activity>
+	<activity android:name="ViewResult"></activity>
+	<activity android:name="LoadDBMed"></activity>
+	<activity android:name="LoadDBApp"></activity>
+		<activity android:name="LoadDBAdv"></activity>
+		<activity android:name="LoadDBTest"></activity>	
+			<activity android:name="VIewApp"></activity>	
+			<activity android:name="Danger"></activity>	
+			<activity android:name="AbstractDemoChart"></activity>	
+			<activity android:name="ChartDemo"></activity>
+			<activity android:name="CalanderView"></activity>
+			
+				
+			<activity android:name="com.drtms.MultipleTemperatureChart"></activity>
+			<activity android:name="org.achartengine.GraphicalActivity"></activity>
+            <activity android:name=".GeneratedChartDemo"></activity>
+        
+			<receiver android:name=".AlarmReceiver" >
+        </receiver>
+
+        <service
+            android:name="NotificationService"
+            android:enabled="true" />		
+            
+            </application>
+        
+
+</manifest>

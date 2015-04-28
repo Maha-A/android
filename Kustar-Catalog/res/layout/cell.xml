@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0">
+
+    <Button
+        android:id="@+id/grid_item"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textSize="20sp"
+        android:enabled="true"
+        android:clickable="true"
+        android:background="#20B2AA" 
+        android:textColor="#ffffff"
+        android:shadowColor="#000000" >
+    </Button>
+
+</LinearLayout>

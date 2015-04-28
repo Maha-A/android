@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  
+    android:background="#ffffff"
+     >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Please Enter Your HG level" 
+        android:textColor="#3399FF"/>
+
+    <EditText
+        android:numeric="integer"
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+         android:textColor="#ffffff" 
+         android:background="#484848">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_below="@+id/editText1"
+        android:text="Please Enter Your Creatinen level" 
+         android:textColor="#3399FF"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:ems="10" 
+        android:textColor="#ffffff"
+        android:background="#484848"
+        android:numeric="integer"
+          />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="14dp"
+        android:text="Please Enter Your Glucose level" 
+         android:textColor="#3399FF"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:ems="10" 
+        android:textColor="#ffffff"
+        android:background="#484848"
+        android:numeric="integer"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="16dp"
+        android:text="Please Enter Your Neutrophils level"
+         android:textColor="#3399FF" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/EditText5"
+        android:layout_marginTop="18dp"
+        android:text="Please Enter Your Basophils level"
+         android:textColor="#3399FF" />
+
+    <EditText
+        android:id="@+id/EditText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:textColor="#ffffff" 
+        android:background="#484848"
+        android:numeric="integer"
+        
+          />
+
+    <EditText
+        android:id="@+id/EditText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:background="#484848"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:numeric="integer"
+         />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="14dp"
+        android:background="#003399"
+        android:text="Next"
+        android:textColor="#3399FF" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/EditText4"
+        android:layout_marginTop="21dp"
+        android:text="Do you have any first degree relative that have the following illnesses:" 
+        android:textColor="#000000" />
+
+    <CheckBox
+        android:id="@+id/checkBox99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditText5"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="19dp"
+        android:text="Diabetes"
+        android:textColor="#000000" />
+
+    <CheckBox
+        android:id="@+id/checkBox88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBox99"
+        android:text="Heart Failure"
+        android:textColor="#000000" />
+
+</RelativeLayout>

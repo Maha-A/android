@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#F0F0F0"
+   >
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TitleTextView"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/EmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phoneNumber"
+        android:layout_alignLeft="@+id/LastNameTextView"
+        android:layout_marginBottom="42dp"
+        android:text="email" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email"
+        android:layout_marginBottom="26dp"
+        android:layout_toRightOf="@+id/PhoneNumberTextView"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="250dip"
+        android:layout_height="25dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_toRightOf="@+id/EmailTextView"
+        android:background="#20B2AA"
+        android:text="register"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NameTextView"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_marginTop="28dp"
+        android:text="Title" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NameTextView"
+        android:layout_alignBottom="@+id/NameTextView"
+        android:layout_alignLeft="@+id/lastName"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/LastNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lastName"
+        android:layout_alignParentLeft="true"
+        android:text="Last Name" />
+
+    <TextView
+        android:id="@+id/NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lastName"
+        android:layout_alignLeft="@+id/LastNameTextView"
+        android:layout_marginBottom="27dp"
+        android:text="First name" />
+
+    <TextView
+        android:id="@+id/PhoneNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phoneNumber"
+        android:layout_alignBottom="@+id/phoneNumber"
+        android:layout_alignLeft="@+id/TitleTextView"
+        android:text="Phone Number" />
+
+    <TextView
+        android:id="@+id/DepartmentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TitleTextView"
+        android:layout_below="@+id/TitleTextView"
+        android:layout_marginTop="36dp"
+        android:text="Department" />
+
+    <EditText
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DepartmentTextView"
+        android:layout_alignBottom="@+id/DepartmentTextView"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EmailTextView"
+        android:layout_alignBottom="@+id/EmailTextView"
+        android:layout_toRightOf="@+id/PhoneNumberTextView"
+        android:layout_weight="1"
+        android:ems="10" />
+
+</RelativeLayout>

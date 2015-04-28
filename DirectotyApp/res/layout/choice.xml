@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="250dip"
+        android:layout_height="25dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="175dp"
+        android:background="#20B2AA"
+        android:text="Look up"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ok2"
+        android:layout_width="250dip"
+        android:layout_height="25dip"
+        android:layout_above="@+id/ok"
+        android:layout_alignLeft="@+id/ok"
+        android:layout_marginBottom="57dp"
+        android:background="#20B2AA"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
